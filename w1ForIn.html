@@ -1,0 +1,88 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Level 0 Boss Challenge</title>
+<p> Evan Van Duzer </p>
+<meta charset="UTF-8">
+  <meta name="description" content="Level 0">
+  <meta name="keywords" content="Level 0, Game Prototyping, New England Institute of Technology">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ </head>
+<body>
+<h1>Evan Van Duzer</h1>
+
+<script>
+var myArray = new Array(100);
+for (var i = 1; i <= 100; i++)
+{
+	//object       //index of i, label goes into statements
+	myArray[i] = {index:i, label:undefined}; //fills in array from 1 to 100
+
+//Fizz Buzz start
+	if(i%2 == 0 && i%3 == 0)
+	{
+		//console.log("Fizzbuzz");
+		myArray[i].label="Fizzbuzz";
+		
+	}
+
+	else if(i%2 == 0)
+	{
+		//console.log("fizz");
+		myArray[i].label="fizz";
+	}
+
+	else if(i%3 == 0)
+	{
+		//console.log("buzz");
+		myArray[i].label="buzz";
+	}
+
+	else 
+	{
+		//console.log(i);
+		myArray[i].label="undefinded";
+		
+	}	
+}
+
+
+/*
+//for in loops
+for (let i in myArray) //logs array objects with label value of fizz
+{
+	if (myArray[i].label == "fizz")
+	{
+		console.log(myArray[i]);
+	}
+	
+	else 
+	{
+	
+	}
+}
+*/
+
+for (let i in myArray)
+{
+	console.log(myArray[i].index)
+	console.log(myArray[i].label)
+
+}
+
+	
+console.log(myArray);
+
+//Fizz Buzz End
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
